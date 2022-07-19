@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SmartAgro</title>
+	 <!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.3/css/mdb.min.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <a class="navbar-brand" href="/">SmartAgro</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Inicio <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/dataset">Dataset</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="/home">Home</a>
+      </li>
+
+
+    </ul>
+ <!--    <form class="form-inline my-2 my-lg-0" method="POST" action="/predict">
+      <input class="form-control mr-sm-2" type="text" name="namequery" placeholder="" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Predict</button>
+    </form> -->
+  </div>
+</nav>
+<br/>
+<br/>
+<!-- blue #0686e4 -->
+<div class="jumbotron" style="background:#2d2d2d;color:#fff">
+    <div class="container">
+      <h2 class="display-3">SmartAgro</h2>
+      <p>PATTERN MINING PARA EXTRACCIÓN DE PATRONES EN AGRICULTURA Y SIMULACIÓN DE CULTIVOS </p>
+      <p><a class="btn btn-success waves-effect btn-lg" href="/" role="button">Refrescar &raquo;</a></p>
+    </div>
+  </div>
+<br/>
+
+<div class="container" >
+<form method="POST" action="/predict">
+
+		<!-- Clean Layout -->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5">
+	          <div class="card mb-10 shadow-sm" id="custom_card">
+
+	          	 <!-- Feature Starts here -->
+	          	<div class="form-group">
+	          	  <label for="age">Fecha:</label>
+	          	  <input type="number" class="form-control form-control-sm" id="age" name="age" min=7 value="7">
+	          	</div>
+	          	<!-- Feature Ends here -->
+
+	          	<!-- Feature Starts here -->
+	          	<div class="form-group">
+	          	  <label for="age">Hora:</label>
+	          	  <input type="number" class="form-control form-control-sm" id="age" name="age" min=7 value="7">
+	          	</div>
+	          	<!-- Feature Ends here -->
+
+	          	<!-- Feature Starts here -->
+	          	<div class="form-group">
+	          	  <label for="age">Temperatura:</label>
+	          	  <input type="number" class="form-control form-control-sm" id="age" name="age" min=7 value="7">
+	          	</div>
+	          	<!-- Feature Ends here -->
+
+	          	<!-- Feature Starts here -->
+	          	<div class="form-group">
+	          	  <label for="age">Precipitacion:</label>
+	          	  <input type="number" class="form-control form-control-sm" id="age" name="age" min=7 value="7">
+	          	</div>
+	          	<!-- Feature Ends here -->
+
+						</div>
+				</div>
+
+
+
+
+			<div class="col-md-5">
+		          <div class="card mb-10 shadow-sm" id="custom_card2">
+
+		          	<!-- Feature Starts here -->
+		          	<div class="form-group">
+		          	  <label for="age">Humedad:</label>
+		          	  <input type="number" class="form-control form-control-sm" id="age" name="age" min=7 value="7">
+		          	</div>
+		          	<!-- Feature Ends here -->
+
+		          	<!-- Feature Starts here -->
+		          	<div class="form-group">
+		          	  <label for="age">Temperatura:</label>
+		          	  <input type="number" class="form-control form-control-sm" id="age" name="age" min=7 value="7">
+		          	</div>
+		          	<!-- Feature Ends here -->
+
+		          	<!-- Feature Starts here -->
+		          	<div class="form-group">
+		          	  <label for="age">Velocidad del Viento:</label>
+		          	  <input type="number" class="form-control form-control-sm" id="age" name="age" min=7 value="7">
+		          	</div>
+		          	<!-- Feature Ends here -->
+
+		          	<!-- Feature Ends here -->
+
+				</div>
+			</div>
+		</div>
+		</div>
+		<!-- Clean Layout ends here -->
+<button type="reset" class="btn btn-outline-success">Reiniciar</button>
+<button type="submit" class="btn btn-primary">Predecir</button>
+</form>
+</div>
+<br/>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-6" >
+          <div class="card mb-10 shadow-sm" id="custom_card">
+          	<h4>Resultado</h4>
+          	<h6>Data Original</h6>
+          	<pre>{{ sample_result }}</pre>
+          	<br/>
+
+
+		</div>
+	</div>
+
+
+
+	<div class="col-md-6" >
+          <div class="card mb-10 shadow-sm" id="custom_card2" style="background-color:#2d2d2d; color:white;padding:5px">
+          	<h4>Predicción</h4>
+			<div class="alert alert-primary" role="alert">
+			  {{ prediction }}
+			</div>
+			<hr/>
+			<h6>Probabilidad</h6>
+			<p>{{ pred_probalility_score }}</p>
+
+		</div>
+	</div>
+</div>
+	<br/>
+  <br/>
+  <br/>
+
+</div>
+
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.3/js/mdb.min.js"></script>
+
+</body>
+</html>

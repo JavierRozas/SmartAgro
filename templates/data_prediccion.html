@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<style>
+	th{text-align: left;}
+</style>
+
+<div class="jumbotron" style="background:#57bd59;color:#fff">
+	<div class="px-2">
+		<h3 class="display-6"><b>Dataset Original</b></h3>
+		<p>Se puede ver el dataset que que se usó para entrenar al modelo de Machine Learning antes de pasar por el prceso de Pre-Procesamiento</p>
+		<hr class="my-4">
+		<p>
+			<a class="btn btn-dark waves-effect btn-lg me-4" href="/simulacion_final" role="button"><i class="fas fa-angle-double-left"></i>&nbsp;&nbsp;&nbsp;&nbsp;Volver</a>
+			<a class="btn btn-dark waves-effect btn-lg me-4" href="/data_original" role="button">Dataset Original&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-table"></i></a>
+		</p>
+	</div>
+</div>
+
+<div class="px-4">
+
+	<div class="card mb-4 mt-4">
+		<div class="card-body">
+			El dataset que se está presentando ha sido elaborado para este proyecto. Este dataset es resultado de haber realizado el proceso de pre-procesamiento de datos con el <strong>dataset original</strong>. La tabla que se está mostrando corresponde al dataset que usaremos para entrenar el modelo de Machine Learning.
+			<br>
+			<a target="_blank" href="https://www.chartjs.org/docs/latest/">Ver más información sobre este Dataset</a>
+		</div>
+	</div>
+
+	<div class="card mb-4 mt-2">
+
+		<div style="color:white;" class="card-header bg-dark">
+			<i class="fas fa-chart-area me-1"></i>
+			Tabla Dataset Predicción
+		</div>
+
+		<div class="card-body">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="table-responsive" style="font-size: 14px;">
+							{{ df_table.to_html(border="0", classes="display", table_id="mydataset", index=False) | safe}}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="card-footer small text-muted bg-dark">Updated yesterday at 11:59 PM</div>
+	</div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static',filename='datatable.js') }}"> </script>
+{% endblock %}

@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="jumbotron" style="background:#57bd59;color:#fff">
+    <div class="px-2">
+        <h3 class="display-6"> <b>Resultados FP-Growth</b> </h3>
+    </div>
+</div>
+
+<div class="container-fluid px-4 mt-3">
+    <div class="card mb-6 shadow-sm px-2" id="custom_card2" style="background-color:#212529; color:white;">
+        <div class="mt-2"> </div>
+        <h5>Tiempo de ejecución:</h5>
+        <div class="alert alert-success px-2" style="background-color:#fff;" role="alert" >
+            El tiempo de ejecución del algoritmo FP-GROWTH es de <b>{{ tiempo }}</b> segundos.
+        </div>
+        <hr/>
+        <h6>Para evaluar el desempeño del agoritmo se usó el dataset (MIDAGRI 2020 - 2021)</h6>
+    </div>
+</div>
+
+<style>
+th{text-align: left;}
+</style>
+
+<div class="container-fluid px-4 mt-3">
+    <div>
+        <div class="card ">
+
+            <div style="color:white;" class="card-header bg-dark">
+                <i class="fas fa-chart-area me-1"></i>
+                Resultados Algoritmo FP-Growth
+            </div>
+
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="table-responsive" style="font-size: 14px;">
+                            {{ df_table.to_html(border="0", classes="display", table_id="mydataset", index=False) | safe}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-footer small text-muted bg-dark">Updated yesterday at 11:59 PM</div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static',filename='datatable.js') }}"> </script>
+{% endblock %}

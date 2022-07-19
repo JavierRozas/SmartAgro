@@ -1,0 +1,481 @@
+nombre;año;mes;precio;volumen
+Aji;2020;01;2.41;2291.00
+Aji;2020;02;2.71;2322.00
+Aji;2020;03;2.60;1939.00
+Aji;2020;04;1.87;2040.00
+Aji;2020;05;1.74;2246.00
+Aji;2020;06;1.53;2272.00
+Aji;2020;07;1.99;2655.00
+Aji;2020;08;1.82;2586.00
+Aji;2020;09;2.42;2265.00
+Aji;2020;10;3.24;2837.00
+Aji;2020;11;3.53;2855.00
+Aji;2020;12;3.05;3006.00
+Aji;2021;01;2.95;2347.00
+Aji;2021;02;2.05;2445.00
+Aji;2021;03;1.42;2685.00
+Aji;2021;04;1.83;1998.00
+Aji;2021;05;3.51;2179.00
+Aji;2021;06;2.94;2273.00
+Aji;2021;07;3.25;2455.00
+Aji;2021;08;3.49;2367.00
+Aji;2021;09;3.04;2661.00
+Aji;2021;10;2.72;2870.00
+Aji;2021;11;2.76;3004.00
+Aji;2021;12;3.30;2681.00
+Ajo;2020;01;4.92;4617.00
+Ajo;2020;02;6.98;3672.00
+Ajo;2020;03;8.62;3154.00
+Ajo;2020;04;7.18;2931.00
+Ajo;2020;05;7.53;3366.00
+Ajo;2020;06;9.54;3110.00
+Ajo;2020;07;9.26;3268.00
+Ajo;2020;08;10.42;3107.00
+Ajo;2020;09;8.11;4125.00
+Ajo;2020;10;6.49;4986.00
+Ajo;2020;11;6.68;4705.00
+Ajo;2020;12;6.38;4313.00
+Ajo;2021;01;8.10;3314.00
+Ajo;2021;02;8.37;2496.00
+Ajo;2021;03;7.89;3199.00
+Ajo;2021;04;7.51;3011.00
+Ajo;2021;05;7.08;3051.00
+Ajo;2021;06;6.09;3219.00
+Ajo;2021;07;5.97;3421.00
+Ajo;2021;08;5.06;4187.00
+Ajo;2021;09;4.53;4757.00
+Ajo;2021;10;4.08;4609.00
+Ajo;2021;11;3.98;4016.00
+Ajo;2021;12;4.25;4408.00
+Arroz cascara;2020;01;2.03;24434.81
+Arroz cascara;2020;02;2.03;22947.00
+Arroz cascara;2020;03;2.24;28521.19
+Arroz cascara;2020;04;2.48;26109.31
+Arroz cascara;2020;05;2.52;15375.56
+Arroz cascara;2020;06;2.27;24719.30
+Arroz cascara;2020;07;2.22;25508.62
+Arroz cascara;2020;08;2.20;28022.41
+Arroz cascara;2020;09;2.17;21599.84
+Arroz cascara;2020;10;2.05;22962.38
+Arroz cascara;2020;11;2.09;28316.66
+Arroz cascara;2020;12;2.24;19570.63
+Arroz cascara;2021;01;2.25;23158.53
+Arroz cascara;2021;02;2.36;21248.61
+Arroz cascara;2021;03;2.25;20235.04
+Arroz cascara;2021;04;2.19;22365.61
+Arroz cascara;2021;05;2.14;25872.29
+Arroz cascara;2021;06;2.11;26225.72
+Arroz cascara;2021;07;2.12;25022.00
+Arroz cascara;2021;08;2.17;26967.54
+Arroz cascara;2021;09;2.17;26007.78
+Arroz cascara;2021;10;2.15;26098.09
+Arroz cascara;2021;11;2.18;25861.22
+Arroz cascara;2021;12;2.20;28381.83
+Arveja grano seco;2020;01;2.67;944.00
+Arveja grano seco;2020;02;2.88;1839.00
+Arveja grano seco;2020;03;2.23;2120.00
+Arveja grano seco;2020;04;3.54;1560.00
+Arveja grano seco;2020;05;4.52;1731.00
+Arveja grano seco;2020;06;3.30;2024.00
+Arveja grano seco;2020;07;1.74;1918.00
+Arveja grano seco;2020;08;1.41;2200.00
+Arveja grano seco;2020;09;1.46;2389.00
+Arveja grano seco;2020;10;1.36;2337.00
+Arveja grano seco;2020;11;1.33;1937.00
+Arveja grano seco;2020;12;2.40;2102.00
+Arveja grano seco;2021;01;5.12;1071.00
+Arveja grano seco;2021;02;6.75;1227.00
+Arveja grano seco;2021;03;2.45;1521.00
+Arveja grano seco;2021;04;1.09;2412.00
+Arveja grano seco;2021;05;1.22;2304.00
+Arveja grano seco;2021;06;1.05;1975.00
+Arveja grano seco;2021;07;1.30;1699.00
+Arveja grano seco;2021;08;1.94;2332.00
+Arveja grano seco;2021;09;2.54;1785.00
+Arveja grano seco;2021;10;2.04;1889.00
+Arveja grano seco;2021;11;1.60;1522.00
+Arveja grano seco;2021;12;2.60;1667.00
+Arveja grano verde;2020;01;3.24;3212.00
+Arveja grano verde;2020;02;3.24;3572.00
+Arveja grano verde;2020;03;2.71;5050.00
+Arveja grano verde;2020;04;3.53;3366.00
+Arveja grano verde;2020;05;5.15;2481.00
+Arveja grano verde;2020;06;3.81;3579.00
+Arveja grano verde;2020;07;2.23;4111.00
+Arveja grano verde;2020;08;1.75;3385.00
+Arveja grano verde;2020;09;1.77;2551.00
+Arveja grano verde;2020;10;1.73;2850.00
+Arveja grano verde;2020;11;1.71;2601.00
+Arveja grano verde;2020;12;3.22;2068.00
+Arveja grano verde;2021;01;6.56;2064.00
+Arveja grano verde;2021;02;8.31;2065.00
+Arveja grano verde;2021;03;3.93;3450.00
+Arveja grano verde;2021;04;1.61;3506.00
+Arveja grano verde;2021;05;1.52;3581.00
+Arveja grano verde;2021;06;1.45;3366.00
+Arveja grano verde;2021;07;1.80;3064.00
+Arveja grano verde;2021;08;2.51;2271.00
+Arveja grano verde;2021;09;3.12;2288.00
+Arveja grano verde;2021;10;2.52;2654.00
+Arveja grano verde;2021;11;1.97;2261.00
+Arveja grano verde;2021;12;3.03;2265.00
+Camote;2020;01;0.85;5962.00
+Camote;2020;02;0.63;5820.00
+Camote;2020;03;0.80;6113.00
+Camote;2020;04;0.95;5824.00
+Camote;2020;05;0.80;6411.00
+Camote;2020;06;0.93;4777.00
+Camote;2020;07;1.13;5304.00
+Camote;2020;08;1.06;5542.00
+Camote;2020;09;1.14;5872.00
+Camote;2020;10;1.14;6712.00
+Camote;2020;11;1.04;7249.00
+Camote;2020;12;0.95;7109.00
+Camote;2021;01;0.94;6684.00
+Camote;2021;02;0.87;6392.00
+Camote;2021;03;0.93;6320.00
+Camote;2021;04;1.06;6837.00
+Camote;2021;05;0.89;6506.00
+Camote;2021;06;0.85;6274.00
+Camote;2021;07;1.01;5866.00
+Camote;2021;08;1.16;6723.00
+Camote;2021;09;1.11;6627.00
+Camote;2021;10;0.98;7164.00
+Camote;2021;11;0.94;7962.00
+Camote;2021;12;0.87;7987.00
+Cebolla cabeza roja;2020;01;0.63;17559.00
+Cebolla cabeza roja;2020;02;0.60;17715.00
+Cebolla cabeza roja;2020;03;1.18;22747.00
+Cebolla cabeza roja;2020;04;1.46;20474.00
+Cebolla cabeza roja;2020;05;1.30;17418.00
+Cebolla cabeza roja;2020;06;1.53;15408.00
+Cebolla cabeza roja;2020;07;0.96;18706.00
+Cebolla cabeza roja;2020;08;1.01;18925.00
+Cebolla cabeza roja;2020;09;1.19;17063.00
+Cebolla cabeza roja;2020;10;1.29;19248.00
+Cebolla cabeza roja;2020;11;1.13;20128.00
+Cebolla cabeza roja;2020;12;1.01;16891.00
+Cebolla cabeza roja;2021;01;1.09;19479.00
+Cebolla cabeza roja;2021;02;0.94;19150.00
+Cebolla cabeza roja;2021;03;0.93;21590.00
+Cebolla cabeza roja;2021;04;0.89;23439.00
+Cebolla cabeza roja;2021;05;0.64;19193.00
+Cebolla cabeza roja;2021;06;0.71;16193.00
+Cebolla cabeza roja;2021;07;0.69;18780.00
+Cebolla cabeza roja;2021;08;0.76;18788.00
+Cebolla cabeza roja;2021;09;1.34;16630.00
+Cebolla cabeza roja;2021;10;1.55;17601.00
+Cebolla cabeza roja;2021;11;1.39;19778.00
+Cebolla cabeza roja;2021;12;1.25;18736.00
+Frijol grano seco;2020;01;1.67;257.00
+Frijol grano seco;2020;02;1.89;368.00
+Frijol grano seco;2020;03;2.42;212.00
+Frijol grano seco;2020;04;2.08;41.00
+Frijol grano seco;2020;05;2.99;119.00
+Frijol grano seco;2020;06;2.41;151.00
+Frijol grano seco;2020;07;2.46;220.00
+Frijol grano seco;2020;08;2.42;246.00
+Frijol grano seco;2020;09;2.43;355.00
+Frijol grano seco;2020;10;1.87;608.00
+Frijol grano seco;2020;11;1.91;431.00
+Frijol grano seco;2020;12;2.19;371.00
+Frijol grano seco;2021;01;2.65;496.00
+Frijol grano seco;2021;02;2.68;299.00
+Frijol grano seco;2021;03;2.69;88.00
+Frijol grano seco;2021;04;2.75;150.00
+Frijol grano seco;2021;05;2.20;204.00
+Frijol grano seco;2021;06;2.22;254.00
+Frijol grano seco;2021;07;2.17;163.00
+Frijol grano seco;2021;08;2.56;234.00
+Frijol grano seco;2021;09;3.34;91.00
+Frijol grano seco;2021;10;3.19;209.00
+Frijol grano seco;2021;11;3.16;175.00
+Frijol grano seco;2021;12;2.43;252.00
+Haba grano seco;2020;01;1.07;1635.00
+Haba grano seco;2020;02;1.03;1421.00
+Haba grano seco;2020;03;1.15;1928.00
+Haba grano seco;2020;04;1.14;1999.00
+Haba grano seco;2020;05;1.21;1599.00
+Haba grano seco;2020;06;1.65;1423.00
+Haba grano seco;2020;07;1.89;1588.00
+Haba grano seco;2020;08;1.60;1872.00
+Haba grano seco;2020;09;1.61;1488.00
+Haba grano seco;2020;10;1.57;1817.00
+Haba grano seco;2020;11;0.98;2543.00
+Haba grano seco;2020;12;0.93;2583.00
+Haba grano seco;2021;01;0.98;1909.00
+Haba grano seco;2021;02;1.39;1477.00
+Haba grano seco;2021;03;1.49;1549.00
+Haba grano seco;2021;04;1.22;2114.00
+Haba grano seco;2021;05;1.06;2195.00
+Haba grano seco;2021;06;0.87;1966.00
+Haba grano seco;2021;07;0.97;1798.00
+Haba grano seco;2021;08;0.94;1668.00
+Haba grano seco;2021;09;0.93;1796.00
+Haba grano seco;2021;10;1.01;2191.00
+Haba grano seco;2021;11;0.97;2497.00
+Haba grano seco;2021;12;1.82;1576.00
+Maiz amarillo duro;2020;01;1.15;488.70
+Maiz amarillo duro;2020;02;1.15;495.72
+Maiz amarillo duro;2020;03;1.16;101.10
+Maiz amarillo duro;2020;04;1.25;366.10
+Maiz amarillo duro;2020;05;1.22;171.70
+Maiz amarillo duro;2020;06;1.19;214.20
+Maiz amarillo duro;2020;07;1.19;502.00
+Maiz amarillo duro;2020;08;1.21;421.20
+Maiz amarillo duro;2020;09;1.28;587.14
+Maiz amarillo duro;2020;10;1.38;368.70
+Maiz amarillo duro;2020;11;1.44;304.20
+Maiz amarillo duro;2020;12;1.46;516.90
+Maiz amarillo duro;2021;01;1.49;735.80
+Maiz amarillo duro;2021;02;1.52;492.30
+Maiz amarillo duro;2021;03;1.47;426.30
+Maiz amarillo duro;2021;04;1.58;517.20
+Maiz amarillo duro;2021;05;1.66;770.70
+Maiz amarillo duro;2021;06;1.64;673.50
+Maiz amarillo duro;2021;07;1.63;1108.26
+Maiz amarillo duro;2021;08;1.66;715.50
+Maiz amarillo duro;2021;09;1.68;936.30
+Maiz amarillo duro;2021;10;1.68;661.80
+Maiz amarillo duro;2021;11;1.76;492.00
+Maiz amarillo duro;2021;12;1.83;611.70
+Maiz amilaceo;2020;01;1.08;5362.00
+Maiz amilaceo;2020;02;1.34;4607.00
+Maiz amilaceo;2020;03;1.56;4071.00
+Maiz amilaceo;2020;04;1.21;2802.00
+Maiz amilaceo;2020;05;1.21;2278.00
+Maiz amilaceo;2020;06;1.43;1741.00
+Maiz amilaceo;2020;07;1.64;1863.00
+Maiz amilaceo;2020;08;1.61;1822.00
+Maiz amilaceo;2020;09;1.85;1864.00
+Maiz amilaceo;2020;10;1.83;2815.00
+Maiz amilaceo;2020;11;1.97;2685.00
+Maiz amilaceo;2020;12;1.82;3302.00
+Maiz amilaceo;2021;01;2.04;3557.00
+Maiz amilaceo;2021;02;2.17;3044.00
+Maiz amilaceo;2021;03;2.69;3102.00
+Maiz amilaceo;2021;04;2.25;2928.00
+Maiz amilaceo;2021;05;2.01;2117.00
+Maiz amilaceo;2021;06;2.27;1699.00
+Maiz amilaceo;2021;07;2.15;1990.00
+Maiz amilaceo;2021;08;2.12;2127.00
+Maiz amilaceo;2021;09;2.19;2221.00
+Maiz amilaceo;2021;10;2.24;2528.00
+Maiz amilaceo;2021;11;2.02;3147.00
+Maiz amilaceo;2021;12;1.46;4008.00
+Olluco;2020;01;2.39;2117.00
+Olluco;2020;02;1.77;2238.00
+Olluco;2020;03;1.51;2418.00
+Olluco;2020;04;1.26;3163.00
+Olluco;2020;05;1.11;3078.00
+Olluco;2020;06;1.33;2925.00
+Olluco;2020;07;1.25;3078.00
+Olluco;2020;08;1.37;2792.00
+Olluco;2020;09;1.41;2328.00
+Olluco;2020;10;1.49;2577.00
+Olluco;2020;11;1.70;2954.00
+Olluco;2020;12;1.74;2330.00
+Olluco;2021;01;1.66;1850.00
+Olluco;2021;02;2.52;1558.00
+Olluco;2021;03;2.39;2741.00
+Olluco;2021;04;1.49;3137.00
+Olluco;2021;05;1.32;2492.00
+Olluco;2021;06;1.17;2580.00
+Olluco;2021;07;1.21;2394.00
+Olluco;2021;08;1.27;2903.00
+Olluco;2021;09;1.35;2491.00
+Olluco;2021;10;1.41;2359.00
+Olluco;2021;11;1.44;2948.00
+Olluco;2021;12;1.56;2800.00
+Papa blanca;2020;01;0.75;31963.00
+Papa blanca;2020;02;0.64;30206.00
+Papa blanca;2020;03;0.65;33167.00
+Papa blanca;2020;04;0.68;32644.00
+Papa blanca;2020;05;0.50;32163.00
+Papa blanca;2020;06;0.53;34789.00
+Papa blanca;2020;07;0.48;39968.00
+Papa blanca;2020;08;0.54;40690.00
+Papa blanca;2020;09;0.59;39218.00
+Papa blanca;2020;10;0.55;40380.00
+Papa blanca;2020;11;0.52;36517.00
+Papa blanca;2020;12;0.64;43649.00
+Papa blanca;2021;01;0.69;42499.00
+Papa blanca;2021;02;0.61;34756.00
+Papa blanca;2021;03;0.77;42091.00
+Papa blanca;2021;04;0.82;39204.00
+Papa blanca;2021;05;0.78;40372.00
+Papa blanca;2021;06;0.83;40490.00
+Papa blanca;2021;07;0.92;43395.00
+Papa blanca;2021;08;1.02;42069.00
+Papa blanca;2021;09;1.13;45035.00
+Papa blanca;2021;10;1.08;46490.00
+Papa blanca;2021;11;1.08;43599.00
+Papa blanca;2021;12;1.06;46876.00
+Papa color;2020;01;0.91;4226.00
+Papa color;2020;02;0.93;4396.00
+Papa color;2020;03;0.73;3052.00
+Papa color;2020;04;0.66;4052.00
+Papa color;2020;05;0.51;3656.00
+Papa color;2020;06;0.60;4525.00
+Papa color;2020;07;0.59;2797.00
+Papa color;2020;08;0.57;2022.00
+Papa color;2020;09;0.48;1456.00
+Papa color;2020;10;0.46;2156.00
+Papa color;2020;11;0.43;1850.00
+Papa color;2020;12;0.51;1252.00
+Papa color;2021;01;0.80;1550.00
+Papa color;2021;02;0.92;2125.00
+Papa color;2021;03;1.29;2108.00
+Papa color;2021;04;1.37;3482.00
+Papa color;2021;05;1.29;1589.00
+Papa color;2021;06;1.39;1467.00
+Papa color;2021;07;1.44;1973.00
+Papa color;2021;08;1.25;2535.00
+Papa color;2021;09;1.13;912.00
+Papa color;2021;10;0.86;2093.00
+Papa color;2021;11;0.87;2190.00
+Papa color;2021;12;1.01;3074.00
+Papa nativa;2020;01;1.74;4348.00
+Papa nativa;2020;02;1.69;4655.00
+Papa nativa;2020;03;1.39;4826.00
+Papa nativa;2020;04;1.49;2100.00
+Papa nativa;2020;05;1.18;1403.00
+Papa nativa;2020;06;1.23;1684.00
+Papa nativa;2020;07;1.82;1650.00
+Papa nativa;2020;08;2.21;1998.00
+Papa nativa;2020;09;2.24;2911.00
+Papa nativa;2020;10;1.83;3097.00
+Papa nativa;2020;11;1.65;3033.00
+Papa nativa;2020;12;1.77;3110.00
+Papa nativa;2021;01;2.09;4154.00
+Papa nativa;2021;02;2.25;2352.00
+Papa nativa;2021;03;2.24;4345.00
+Papa nativa;2021;04;1.91;4952.00
+Papa nativa;2021;05;1.67;4215.00
+Papa nativa;2021;06;1.44;2654.00
+Papa nativa;2021;07;1.47;2318.00
+Papa nativa;2021;08;1.65;2596.00
+Papa nativa;2021;09;1.48;3164.00
+Papa nativa;2021;10;1.15;4669.00
+Papa nativa;2021;11;1.40;3294.00
+Papa nativa;2021;12;1.68;5265.00
+Paprika;2020;01;9.25;2.00
+Paprika;2020;02;8.29;35.00
+Paprika;2020;03;8.45;11.00
+Paprika;2020;04;8.63;2.00
+Paprika;2020;05;8.91;13.00
+Paprika;2020;06;9.94;4.00
+Paprika;2020;07;10.53;14.00
+Paprika;2020;08;10.63;9.00
+Paprika;2020;09;9.25;2.00
+Paprika;2020;10;8.50;8.00
+Paprika;2020;11;9.58;14.00
+Paprika;2020;12;11.07;14.00
+Paprika;2021;01;9.42;14.00
+Paprika;2021;02;10.25;1.00
+Paprika;2021;03;11.73;12.00
+Paprika;2021;04;10.51;14.00
+Paprika;2021;05;9.01;14.00
+Paprika;2021;06;8.78;14.00
+Paprika;2021;07;10.31;16.00
+Paprika;2021;08;11.75;1.00
+Paprika;2021;09;11.38;1.00
+Paprika;2021;10;11.39;11.00
+Paprika;2021;11;11.40;68.00
+Paprika;2021;12;10.92;36.00
+Tomate;2020;01;1.50;8530.00
+Tomate;2020;02;1.74;8206.00
+Tomate;2020;03;2.22;9126.00
+Tomate;2020;04;2.98;7641.00
+Tomate;2020;05;4.15;6002.00
+Tomate;2020;06;2.83;7219.00
+Tomate;2020;07;2.17;7494.00
+Tomate;2020;08;1.64;7412.00
+Tomate;2020;09;1.19;7548.00
+Tomate;2020;10;1.06;7892.00
+Tomate;2020;11;1.18;7525.00
+Tomate;2020;12;1.38;8958.00
+Tomate;2021;01;1.52;8866.00
+Tomate;2021;02;1.61;8554.00
+Tomate;2021;03;1.82;9109.00
+Tomate;2021;04;1.52;8483.00
+Tomate;2021;05;1.52;8122.00
+Tomate;2021;06;1.47;7398.00
+Tomate;2021;07;2.49;7362.00
+Tomate;2021;08;2.69;6799.00
+Tomate;2021;09;2.70;7087.00
+Tomate;2021;10;3.11;7120.00
+Tomate;2021;11;2.28;7925.00
+Tomate;2021;12;1.53;8835.00
+Yuca;2020;01;1.59;5239.00
+Yuca;2020;02;1.43;5022.00
+Yuca;2020;03;1.42;4558.00
+Yuca;2020;04;1.37;3522.00
+Yuca;2020;05;1.15;4135.00
+Yuca;2020;06;1.20;4245.00
+Yuca;2020;07;0.98;6171.00
+Yuca;2020;08;0.97;6036.00
+Yuca;2020;09;0.95;5864.00
+Yuca;2020;10;1.00;5915.00
+Yuca;2020;11;1.11;5346.00
+Yuca;2020;12;1.28;5421.00
+Yuca;2021;01;1.34;5464.00
+Yuca;2021;02;1.19;4945.00
+Yuca;2021;03;1.18;4939.00
+Yuca;2021;04;1.17;5339.00
+Yuca;2021;05;1.11;5393.00
+Yuca;2021;06;1.15;4822.00
+Yuca;2021;07;1.13;5357.00
+Yuca;2021;08;1.27;5091.00
+Yuca;2021;09;1.39;5028.00
+Yuca;2021;10;1.70;4963.00
+Yuca;2021;11;2.14;4540.00
+Yuca;2021;12;2.24;5208.00
+Zanahoria;2020;01;0.82;10515.00
+Zanahoria;2020;02;0.79;11087.00
+Zanahoria;2020;03;1.00;11905.00
+Zanahoria;2020;04;0.92;11797.00
+Zanahoria;2020;05;0.73;10882.00
+Zanahoria;2020;06;0.60;10003.00
+Zanahoria;2020;07;0.52;10433.00
+Zanahoria;2020;08;0.62;9640.00
+Zanahoria;2020;09;0.74;9192.00
+Zanahoria;2020;10;0.83;9844.00
+Zanahoria;2020;11;0.84;9475.00
+Zanahoria;2020;12;0.68;11434.00
+Zanahoria;2021;01;0.58;11950.00
+Zanahoria;2021;02;0.46;11903.00
+Zanahoria;2021;03;0.62;11835.00
+Zanahoria;2021;04;0.62;11099.00
+Zanahoria;2021;05;0.64;10200.00
+Zanahoria;2021;06;0.63;9838.00
+Zanahoria;2021;07;0.88;9483.00
+Zanahoria;2021;08;0.75;9549.00
+Zanahoria;2021;09;0.65;9909.00
+Zanahoria;2021;10;0.60;10353.00
+Zanahoria;2021;11;0.50;10167.00
+Zanahoria;2021;12;0.51;11194.00
+Zapallo;2020;01;0.85;3358.00
+Zapallo;2020;02;0.87;3046.00
+Zapallo;2020;03;1.35;3783.00
+Zapallo;2020;04;2.26;3520.00
+Zapallo;2020;05;1.83;3648.00
+Zapallo;2020;06;1.39;3806.00
+Zapallo;2020;07;0.99;4086.00
+Zapallo;2020;08;0.99;4071.00
+Zapallo;2020;09;0.97;3667.00
+Zapallo;2020;10;0.92;3612.00
+Zapallo;2020;11;0.83;4250.00
+Zapallo;2020;12;0.96;3858.00
+Zapallo;2021;01;1.25;4000.00
+Zapallo;2021;02;1.34;3619.00
+Zapallo;2021;03;1.31;4176.00
+Zapallo;2021;04;1.22;3913.00
+Zapallo;2021;05;0.95;3831.00
+Zapallo;2021;06;0.92;3580.00
+Zapallo;2021;07;1.14;3647.00
+Zapallo;2021;08;1.67;3167.00
+Zapallo;2021;09;1.78;3124.00
+Zapallo;2021;10;2.03;3185.00
+Zapallo;2021;11;1.35;3581.00
+Zapallo;2021;12;1.06;3514.00

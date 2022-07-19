@@ -1,0 +1,151 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<style>
+    th{text-align: left;}
+</style>
+
+<div class="jumbotron" style="background:#57bd59;color:#fff">
+    <div class="px-2">
+        <h3 class="display-6"> <b>Simulación y Pattern Mining</b> </h3>
+        <p>La recomendación de cultivos se hace en función a las reglas de asociación detectadas por el modelo de pattern mining</p>
+        <hr class="my-4">
+        <p>
+            <!--<a class="btn btn-dark waves-effect btn-lg me-4" href="/simulacion_final" role="button"><i class="fas fa-angle-double-left"></i>&nbsp;&nbsp;&nbsp;&nbsp;Volver</a>-->
+            <a class="btn btn-dark waves-effect btn-lg me-4" href="/data_original" role="button">Dataset Original&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-table"></i></a>
+            <a class="btn btn-dark waves-effect btn-lg" href="/data_prediccion" role="button">Dataset Prediccion&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-table"></i></a>
+        </p>
+    </div>
+</div>
+
+<!--
+<a class="btn btn-dark waves-effect btn-lg" href="/cambiar_mes" role="button">Elegir Mes y Año&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-table"></i></a>
+-->
+
+<form method="POST" action="/simulacion_final">        
+    <div class="px-5 mt-4">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card3">
+                    <div class="card-header bg-dark" style="color:#fff"><h3 class="text-center font-weight-light my-1">Controlador - SmartAgro</h3></div>
+                    <div class="card-body">
+                        <form>
+
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating mb-3 mb-md-0">
+                                        <input class="form-control" id="departamento" type="number" placeholder="Enter your first name" name="departamento"/>
+                                        <label for="departamento">Nro. Departamento</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input class="form-control" id="provincia" type="number" placeholder="Enter your last name" name="provincia"/>
+                                        <label for="provincia">Nro. Provincia</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating mb-3 mb-md-0">
+                                        <input class="form-control" id="distrito" type="number" placeholder="Enter your first name" name="distrito"/>
+                                        <label for="distrito">Nro. Distrito</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input class="form-control" step="0.01" id="precio" type="number" placeholder="Enter your last name" name="precio"/>
+                                        <label for="precio">Precio Producto</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating mb-3 mb-md-0">
+                                        <input class="form-control" step="0.01" id="volumen" type="number" placeholder="Enter your first name" name="volumen"/>
+                                        <label for="volumen">Volumen Producto</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input class="form-control" step="0.01" id="temperatura" type="number" placeholder="Enter your last name" name="temperatura"/>
+                                        <label for="temperatura">Temperatura</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating mb-3 mb-md-0">
+                                        <input class="form-control" step="0.01" id="humedad" type="number" placeholder="Enter your first name" name="humedad"/>
+                                        <label for="humedad">Humedad</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input class="form-control" step="0.01" id="precipitacion" type="number" placeholder="Enter your last name" name="precipitacion"/>
+                                        <label for="precipitacion">Precipitación</label>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
+                                <a class="small" href="/mining_01">¿Necesitas ayuda con la recomendación?</a>
+                                <button type="submit" class="btn btn-primary">Realizar Predicción</button>
+                            </div>
+                        </form>                                        
+                    </div>
+                    <div class="card-footer bg-dark text-center py-3">
+                        <div class="small"><a href="/mining_02">¿Desea ver la tabla con todas las reglas detectadas? Ver Tabla</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+<div class="px-0 mt-5">
+    <hr class="my-4 px-5">
+</div>
+
+<div class="container">
+    <div class="col-md-12 mt-3" >
+        <div class="card mb-10 shadow-sm" id="custom_card2" style="background-color:#212529; color:white;padding:5px">
+            <h4 class="text-center">PREDICCIÓN DEL PRODUCTO MÁS ADECUADO</h4>
+            <div class="alert alert-success" role="alert" >
+                PREDICCIÓN: El producto que mejor se adapta a las condiciones ingresadas es <b>{{val}}</b>
+            </div>
+            <hr/>
+            <h6>Mensaje:</h6>
+            <p>{{ men }}</p>
+        </div>
+
+        <p> </p>
+        
+    </div>
+
+</div>
+
+<div class="container">
+    <div class="col-md-12 mt-3" >
+        <div class="card mb-10 shadow-sm" id="custom_card2" style="background-color:#212529; color:white;padding:5px">
+            <h4 class="text-center">Reglas de Asociación para el producto: <b>{{val}}</b> </h4>
+            <div class="alert alert-success" role="alert" >
+                <div class="table-responsive">
+                    <table class="table ">
+                        {{ df_table.to_html(border="0", classes="display", table_id="mydataset", index=False) | safe}}
+                    </table>
+                </div>
+            </div>
+        </div>
+        <p> </p>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static',filename='datatable.js') }}"> </script>
+{% endblock %}

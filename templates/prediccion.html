@@ -1,0 +1,104 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<style>
+	th{text-align: left;}
+</style>
+
+<div class="jumbotron" style="background:#57bd59;color:#fff">
+	<div class="px-2">
+		<h3 class="display-6"><b>Recomendación de Cultivos</b></h3>
+		<p>La recomendación de cultivos se hace en función a las reglas de asociación detectadas por el modelo de pattern mining</p>
+	</div>
+</div>
+
+<form method="POST" action="/prediccion">
+	<div class="px-5 mt-4">
+		<div class="row justify-content-center">
+			<div class="col">
+				<div class="card3">
+					<div class="card-header bg-dark" style="color:#fff"><h3 class="text-center font-weight-light my-1">Controlador - Recomendación</h3></div>
+					<div class="card-body">
+						<form>
+							<div class="form-group row mb-3">
+								<label for="producto" class="col-sm-4 col-form-label col-form-label-lg">Ingresar Nombre del Producto</label>
+								<div class="col-sm-8">
+									<!--<input type="text" class="form-control form-control-lg" id="producto" placeholder="Nombre del Producto" name="producto" autocomplete="off">-->
+									<select class="form-control form-control-lg" id="producto" name="producto">
+										<option value="0" hidden disabled selected>Nombre Producto</option>
+										<option value="Aji">Aji</option>
+										<option value="Ajo">Ajo</option>
+										<option value="Arroz cascara">Arroz cascara</option>
+										<option value="Arveja grano seco">Arveja grano seco</option>
+										<option value="Arveja grano verde">Arveja grano verde</option>
+										<option value="Camote">Camote</option>
+										<option value="Cebolla cabeza roja">Cebolla cabeza roja</option>
+										<option value="Frijol grano seco">Frijol grano seco</option>
+										<option value="Haba grano seco">Haba grano seco</option>
+										<option value="Maiz amarillo duro">Maiz amarillo duro</option>
+										<option value="Maiz amilaceo">Maiz amilaceo</option>
+										<option value="Olluco">Olluco</option>
+										<option value="Papa blanca">Papa blanca</option>
+										<option value="Papa color">Papa color</option>
+										<option value="Papa nativa">Papa nativa</option>
+										<option value="Paprika">Paprika</option>
+										<option value="Tomate">Tomate</option>
+										<option value="Yuca">Yuca</option>
+										<option value="Zanahoria">Zanahoria</option>
+										<option value="Zapallo">Zapallo</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="form-group row mb-3">
+								<label for="porcentaje" class="col-sm-4 col-form-label col-form-label-lg">Ingresar el porcentaje Minimo</label>
+								<div class="col-sm-8">
+									<input type="number" class="form-control form-control-lg" id="colFormLabelLg" placeholder="Porcentaje Minimo del Itemset" min=0 max=99 id="porcentaje" name="porcentaje">
+								</div>
+							</div>
+
+							<div class="form-group row mb-3">
+								<label for="filas" class="col-sm-4 col-form-label col-form-label-lg">Ingresar el Número de Reglas</label>
+								<div class="col-sm-8">
+									<input type="number" class="form-control form-control-lg" id="colFormLabelLg_" placeholder="Porcentaje Minimo del Itemset" min=1 max=100 id="filas" name="filas">
+								</div>
+							</div>
+
+							<div class="d-flex align-items-center justify-content-between mt-4 mb-0">
+								<a class="small" href="/mining_01">¿Necesitas ayuda con la recomendación?</a>
+								<button type="submit" class="btn btn-primary">Mostrar Recomendación</button>
+							</div>
+						</form>
+					</div>
+					<div class="card-footer bg-dark text-center py-3">
+						<div class="small"><a href="/mining_02">¿Desea ver la tabla con todas las reglas detectadas? Ver Tabla</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</form>
+
+<div class="px-0 mt-5">
+	<hr class="my-4 px-5">
+</div>
+
+<div class="col-md-12 mt-3 px-4">
+	<div class="card mb-10 shadow-sm" id="custom_card2" style="background-color:#57bd59; color:white;padding:5px">
+		<h4 class="text-center">Minería de conjuntos de elementos cerrados: 10% para min_freq y 2 para min_size</h4>
+		<div class="alert alert-success" role="alert" >
+			<div class="table-responsive" style="font-size: 14px;">
+				{{ df_resultados.to_html(border="0", classes="display", table_id="mydataset", index=False) | safe}}
+			</div>
+		</div>
+		<hr/>
+		<h6>Mensaje:</h6>
+		<p>{{ mensaje }}</p>
+	</div>
+	<p> </p>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static',filename='datatable.js') }}"> </script>
+{% endblock %}

@@ -1,0 +1,114 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="jumbotron" style="background:#57bd59;color:#fff">
+	<h1 class="display-5"><b>KNN: K-Nearest Neighbors</b></h1>
+	<p class="lead">En esta vista se va a medir los resultados obtenidos después de entrenar al modelo del algoritmo KNN con el dataset.</p>
+	<hr class="my-4">
+</div>
+
+<div class="p-4" >
+    <form method="POST" action="/knn">        
+        <div class="px-0">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="card">
+                        <div class="card-header"><h3 class="text-center font-weight-light my-1">Hiperparametros - KNN</h3></div>
+                        <div class="card-body">
+                            <form>
+
+                                <div class="form-group row mb-3">
+                                    <label for="neighbors" class="col-sm-4 col-form-label col-form-label-lg">Número de Vecinos </label>
+                                    <div class="col-sm-8">
+                                        <input type="number" class="form-control form-control-lg" id="neighbors" name="neighbors" min=0 value="10">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row mb-3 mt-4">
+                                    <label for="weights" class="col-sm-4 col-form-label col-form-label-lg" style="color:#000000">Ingrese los Pesos</label>
+
+                                    <div class="col-sm-8">
+                                        <select class="form-control form-control-lg" id="weights" name="weights">
+                                            <option value="0" hidden disabled selected>Nombre del Weights</option>
+                                            <option value="uniform">UNIFORM</option>
+                                            <option value="distance">DISTANCE</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row mb-3 mt-4">
+                                    <label for="algorithm" class="col-sm-4 col-form-label col-form-label-lg" style="color:#000000">Ingrese el Algoritmo</label>
+
+                                    <div class="col-sm-8">
+                                        <select class="form-control form-control-lg" id="algorithm" name="algorithm">
+                                            <option value="0" hidden disabled selected>Nombre del Algoritmo</option>
+                                            <option value="auto">AUTO</option>
+                                            <option value="ball_tree">BALL_TREE</option>
+                                            <option value="kd_tree">KD_TREE</option>
+                                            <option value="brute">BRUTE</option>                                            
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
+                                    <a class="small" href="/mining_01">¿Necesitas ayuda?</a>
+                                    <button type="submit" class="btn btn-primary">Predecir</button>
+                                </div>
+                            </form>                                        
+                        </div>
+                        <div class="card-footer text-center py-3">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+	<p> </p>
+
+	<div class="col-md-10" >
+		<div class="card mb-10 shadow-sm" id="custom_card2" style="background-color:#2d2d2d; color:white;padding:5px">
+			<h4>Exactitud (Accuracy) obtenida con el modelo de K-Nearest Neighbors (KNN)</h4>
+			<div class="alert alert-success" role="alert" >
+				{{ accuracy }}
+			</div>
+			<hr/>
+			<h6>Porcentaje (%): <b>{{ accuracy * 100 }}</b> </h6>
+		</div>
+
+		<p> </p>
+
+		<div class="card mb-10 shadow-sm" id="custom_card2" style="background-color:#2d2d2d; color:white;padding:5px">
+			<h4>Precisión (Precision) obtenida con el modelo de K-Nearest Neighbors (KNN)</h4>
+			<div class="alert alert-success" role="alert">
+				{{ precision }}
+			</div>
+			<hr/>
+			<h6>Porcentaje (%): <b>{{ precision * 100 }}</b> </h6>
+		</div>
+
+		<p> </p>
+
+		<div class="card mb-10 shadow-sm" id="custom_card2" style="background-color:#2d2d2d; color:white;padding:5px">
+			<h4>Recall obtenido con el modelo de Máquinas de k-nearest neighbors (KNN)</h4>
+			<div class="alert alert-success" role="alert">
+				{{ recall }}
+			</div>
+			<hr/>
+			<h6>Porcentaje (%): <b>{{ recall * 100 }}</b> </h6>
+		</div>
+
+		<p> </p>
+
+		<div class="card mb-10 shadow-sm" id="custom_card2" style="background-color:#2d2d2d; color:white;padding:5px">
+			<h4>F1 obtenido con el modelo de k-nearest neighbors (KNN)</h4>
+			<div class="alert alert-success" role="alert">
+				{{ f1 }}
+			</div>
+			<hr/>
+			<h6>Porcentaje (%): <b>{{ f1 * 100 }}</b> </h6>
+		</div>
+	</div>
+</div>
+{% endblock %}

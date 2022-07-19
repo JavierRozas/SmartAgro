@@ -1,0 +1,93 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<style>
+	th{text-align: left;}
+</style>
+
+<div class="jumbotron" style="background:#57bd59;color:#fff">
+	<div class="px-2">
+		<h3 class="display-6"><b>Elegir Mes y Año</b></h3>
+		<p>Se puede ver el dataset que que se usó para entrenar al modelo de Machine Learning antes de pasar por el prceso de Pre-Procesamiento</p>
+		<hr class="my-4">
+		<p>
+			<a class="btn btn-dark waves-effect btn-lg me-4" href="/simulacion_final" role="button"><i class="fas fa-angle-double-left"></i>&nbsp;&nbsp;&nbsp;&nbsp;Volver</a>
+			<a class="btn btn-dark waves-effect btn-lg" href="/data_prediccion" role="button">Dataset Prediccion&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-table"></i></a>
+		</p>
+	</div>
+</div>
+
+<div class="px-4">
+
+	<div class="card mb-4 mt-4">
+		<div class="card-body">
+			El dataset que se está presentando ha sido elaborado para este proyecto. Ha sido construido juntando la información de otros tres datasets distintos, el dataset de intención de siembra del MIDAGRI, el dataset de volúmenes y precios del sistema SISAP y el dataset sobre reportes de clima de SENAMHI.
+			<br>
+			<a target="_blank" href="https://www.chartjs.org/docs/latest/">Ver más información sobre este Dataset</a>
+		</div>
+	</div>
+
+    <form method="POST" action="/cambiar_mes">        
+        <div class="px-0">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="card">
+                        <div class="card-header"><h3 class="text-center font-weight-light my-1">Hiperparametros - KNN</h3></div>
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group row mb-3 mt-4">
+                                    <label for="mes" class="col-sm-4 col-form-label col-form-label-lg" style="color:#000000">Ingrese el Algoritmo</label>
+
+                                    <div class="col-sm-8">
+                                        <select class="form-control form-control-lg" id="mes" name="mes">
+                                            <option value="6" hidden disabled selected>Mes del Año</option>
+                                            <option value="0">ENERO</option>
+                                            <option value="1">FEBRERO</option>
+                                            <option value="2">MARZO</option>
+											<option value="3">ABRIL</option>
+                                            <option value="4">MAYO</option>
+                                            <option value="5">JUNIO</option>
+                                            <option value="6">JULIO</option>
+                                            <option value="7">AGOSTO</option>
+                                            <option value="8">SEPTIEMBRE</option>
+                                            <option value="9">OCTUBRE</option>
+                                            <option value="10">NOVIEMBRE</option>
+                                            <option value="11">DICIEMBRE</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row mb-3 mt-4">
+                                    <label for="anio" class="col-sm-4 col-form-label col-form-label-lg" style="color:#000000">Ingrese los Pesos</label>
+
+                                    <div class="col-sm-8">
+                                        <select class="form-control form-control-lg" id="anio" name="anio">
+                                            <option value="2020" hidden disabled selected>Ingrese Año</option>
+                                            <option value="2020">2020</option>
+                                            <option value="2021">2021</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
+                                    <a class="small" href="/mining_01">¿Necesitas ayuda?</a>
+                                    <button type="submit" class="btn btn-primary">Predecir</button>
+                                </div>
+                            </form>                                        
+                        </div>
+                        <div class="card-footer text-center py-3">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static',filename='datatable.js') }}"> </script>
+{% endblock %}

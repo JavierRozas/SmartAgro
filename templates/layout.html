@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>SmartAgro</title>
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/styles.css') }}">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css"> 
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    </head>
+
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <style>
+        .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+            background-color: #57bd59 !important;
+        }
+      </style>
+    </head>
+
+    <body class="sb-nav-fixed">
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+            <!-- Navbar Brand-->
+            <a class="navbar-brand ps-3" href="/">SmartAgro</a>
+            <!-- Sidebar Toggle-->
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+
+            <!-- Navbar Search-->
+
+            <!--
+            <form class="d-none d-md-inline-block form-inline ms-auto me-2 me-md-3 my-2 my-md-0">
+                <div class="input-group">
+                    <input class="form-control" type="text" placeholder="Buscar..." aria-label="Buscar..." aria-describedby="btnNavbarSearch" />
+                    <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
+                </div>
+            </form>
+
+            <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#!">Settings</a></li>
+                        <li><a class="dropdown-item" href="#!">Activity Log</a></li>
+                        <li><hr class="dropdown-divider" /></li>
+                        <li><a class="dropdown-item" href="#!">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+            -->
+
+        </nav>
+
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+
+                            <div class="sb-sidenav-menu-heading">Principal</div>
+
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages_" aria-expanded="false" aria-controls="collapsePages_">
+                                <div class="sb-nav-link-icon"><i class="far fa-check-circle"></i></div>
+                                Aplicación 
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapsePages_" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                                    <a class="nav-link" href="/mining_01">Detección Patrones</a>
+                                    <a class="nav-link" href="/mapa">Simulación</a>
+                                    <a class="nav-link" href="/prediccion">Recomendación</a>
+                                    <a class="nav-link" href="/simulacion_final">SMARTAGRO</a>
+                                </nav>
+                            </div>
+
+
+                            <div class="sb-sidenav-menu-heading">Modelos</div>
+
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                Pattern Mining
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPagesPM">
+
+                                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePagesPM" aria-expanded="false" aria-controls="collapsePagesPM">
+                                        Algoritmos
+                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                    </a>
+                                    <div class="collapse" id="collapsePagesPM" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                                        <nav class="sb-sidenav-menu-nested nav">
+                                            <a class="nav-link" href="/itemsets_fpgrowth">FP-Growth</a>
+                                            <a class="nav-link" href="/itemsets_apriori">Apriori</a>
+                                        </nav>
+                                    </div>
+
+                                   <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePagesRE" aria-expanded="false" aria-controls="collapsePagesRE">
+                                        Info Regiones
+                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                    </a>
+                                    <div class="collapse" id="collapsePagesRE" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                                        <nav class="sb-sidenav-menu-nested nav accordion">
+                                            <a class="nav-link" href="/buscar_region">Buscar Región</a>
+                                            <a class="nav-link" href="/comparar_region">Comparar Regiones</a>
+                                        </nav>
+                                    </div>
+
+                                </nav>
+                            </div>
+
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
+                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                Machine Learning
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                                    <a class="nav-link" href="/svm">SVM</a>
+                                    <a class="nav-link" href="/knn">KNN</a>
+                                    <a class="nav-link" href="/rf">Random Forest</a>
+                                </nav>
+                            </div>
+
+
+                            <div class="sb-sidenav-menu-heading">Datos</div>
+
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts_" aria-expanded="false" aria-controls="collapseLayouts_">
+                                <div class="sb-nav-link-icon"><i class="fas fa-database"></i></i></div>
+                                Datasets
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseLayouts_" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="/midagri">MIDAGRI</a>
+                                    <a class="nav-link" href="/precios">SISAP</a>
+                                    <a class="nav-link" href="/senamhi">SENAMHI</a>
+                                </nav>
+                            </div>
+
+                            <!--
+                            <div class="sb-sidenav-menu-heading">Tablero</div>
+
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts2" aria-expanded="false" aria-controls="collapseLayouts2">
+                                <div class="sb-nav-link-icon"><i class="fas fa-chart-line"></i></i></div>
+                                Dashboards
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseLayouts2" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="/prueba_dash">Detección Patrones</a>
+                                    <a class="nav-link" href="/dashboard-1">Simulación</a>
+                                </nav>
+                            </div>
+
+
+                            <div class="sb-sidenav-menu-heading">Interfaz</div>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts1" aria-expanded="false" aria-controls="collapseLayouts1">
+                                <div class="sb-nav-link-icon"><i class="fas fa-sign-in-alt"></i></div>
+                                Autenticación
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseLayouts1" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="/login">Login</a>
+                                    <a class="nav-link" href="/registrar">Registrarce</a>
+                                    <a class="nav-link" href="/contraseña">Recuperar contraseña</a>
+                                </nav>
+                            </div> 
+                            --> 
+                                                    
+                        </div>
+                    </div>
+
+                    <div class="sb-sidenav-footer">
+                        <div class="small">Proyecto:</div>
+                        PRY2021204
+                    </div>
+
+                </nav>
+            </div>
+            <div id="layoutSidenav_content">
+                {% block content %}{% endblock %}
+
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid px-4">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">&copy; Universidad Peruana de Ciencias Aplicadas 2022</div>
+                            <div>
+                                <a href="#">Privacy Policy</a>
+                                &middot;
+                                <a href="#">Terms &amp; Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+            
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="{{ url_for('static',filename='scripts.js') }}"> </script>
+        {% block scripts %}{% endblock %}
+    </body>
+</html>

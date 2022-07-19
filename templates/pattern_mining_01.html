@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<style>
+	th{text-align: left;}
+</style>
+
+<div class="jumbotron" style="background:#57bd59;color:#fff">
+	<div class="px-2">
+		<h3 class="display-6"> <b>Itemsets de Productos</b> </h3>
+		<!--<p>Descripcion</p>-->
+		<hr class="my-4">
+		<p>
+			<a class="btn btn-dark waves-effect btn-lg me-4" href="/mining_02" role="button">Patrones Detectados&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-table"></i></a>
+			<a class="btn btn-dark waves-effect btn-lg" href="/mining_03" role="button">Reglas de Asociación&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-table"></i></a>
+		</p>
+	</div>
+</div>
+
+<div class="px-4">
+	<div class="card my-4">
+
+		<div style="color:white;" class="card-header bg-dark">
+			<i class="fas fa-chart-area me-1"></i>
+			Tabla Itemsets
+		</div>
+
+		<div class="card-body">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="table-responsive" style="font-size: 14px;">
+						{{ df_table.to_html(border="0", classes="display", table_id="mydataset", index=False) | safe}}
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="card-footer small text-muted bg-dark">Updated yesterday at 11:59 PM</div>
+	</div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static',filename='datatable.js') }}"> </script>
+{% endblock %}

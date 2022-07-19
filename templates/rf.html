@@ -1,0 +1,108 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="jumbotron" style="background:#57bd59;color:#fff">
+    <h1 class="display-5"><b>RF: Random Forest</b></h1>
+    <p class="lead">En esta vista se va a medir los resultados obtenidos después de entrenar al modelo del algoritmo RF con el dataset.</p>
+    <hr class="my-4">
+
+</div>
+
+<div class="p-4" >
+    <form method="POST" action="/rf">        
+        <div class="px-0">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="card">
+                        <div class="card-header"><h3 class="text-center font-weight-light my-1">Hiperparametros - RF</h3></div>
+                        <div class="card-body">
+                            <form>
+
+                                <div class="form-group row mb-3">
+                                    <label for="estimators" class="col-sm-4 col-form-label col-form-label-lg">Número Estimadores</label>
+                                    <div class="col-sm-8">
+                                        <input type="number" class="form-control form-control-lg" id="estimators" name="estimators" min=0 value="100">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row mb-3">
+                                    <label for="max_depth" class="col-sm-4 col-form-label col-form-label-lg">Ingrese Max Depth</label>
+                                    <div class="col-sm-8">
+                                        <input type="number" class="form-control form-control-lg" id="max_depth" name="max_depth" min=0 value="10">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row mb-3 mt-4">
+                                    <label for="max_features" class="col-sm-4 col-form-label col-form-label-lg" style="color:#000000">Ingrese los Features</label>
+
+                                    <div class="col-sm-8">
+                                        <select class="form-control form-control-lg" id="max_features" name="max_features">
+                                            <option value="0" hidden disabled selected>Nombre del Feature</option>
+                                            <option value="sqrt">SQRT</option>
+                                            <option value="log2">LOG2</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
+                                    <a class="small" href="/mining_01">¿Necesitas ayuda?</a>
+                                    <button type="submit" class="btn btn-primary">Predecir</button>
+                                </div>
+                            </form>                                        
+                        </div>
+                        <div class="card-footer text-center py-3">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <p> </p>
+
+    <div class="col-md-10" >
+        <div class="card mb-10 shadow-sm" id="custom_card2" style="background-color:#2d2d2d; color:white;padding:5px">
+            <h4>Exactitud (Accuracy) obtenida con el modelo de Random Foreste (RF)</h4>
+            <div class="alert alert-success" role="alert" >
+                {{ accuracy }}
+            </div>
+            <hr/>
+            <h6>Porcentaje (%): <b>{{ accuracy * 100 }}</b> </h6>
+        </div>
+
+        <p> </p>
+
+        <div class="card mb-10 shadow-sm" id="custom_card2" style="background-color:#2d2d2d; color:white;padding:5px">
+            <h4>Precisión (Precision) obtenida con el modelo de Random Forest (RF)</h4>
+            <div class="alert alert-success" role="alert">
+                {{ precision }}
+            </div>
+            <hr/>
+            <h6>Porcentaje (%): <b>{{ precision * 100 }}</b> </h6>
+        </div>
+
+        <p> </p>
+
+        <div class="card mb-10 shadow-sm" id="custom_card2" style="background-color:#2d2d2d; color:white;padding:5px">
+            <h4>Recall obtenido con el modelo de Random Forest (RF)</h4>
+            <div class="alert alert-success" role="alert">
+                {{ recall }}
+            </div>
+            <hr/>
+            <h6>Porcentaje (%): <b>{{ recall * 100 }}</b> </h6>
+        </div>
+
+        <p> </p>
+
+        <div class="card mb-10 shadow-sm" id="custom_card2" style="background-color:#2d2d2d; color:white;padding:5px">
+            <h4>F1 obtenido con el modelo de Random Forest (RF)</h4>
+            <div class="alert alert-success" role="alert">
+                {{ f1 }}
+            </div>
+            <hr/>
+            <h6>Porcentaje (%): <b>{{ f1 * 100 }}</b> </h6>
+        </div>
+    </div>
+</div>
+{% endblock %}
